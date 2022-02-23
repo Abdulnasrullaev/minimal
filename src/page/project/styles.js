@@ -82,10 +82,30 @@ export const Progress = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    .card-wraper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    blockquote {
+      margin: 0;
+      .card-wrappers {
+        margin: 10px 0;
+     div{
+       .title{
+         font-size: 21px;
+       }
+       img{
+         margin: 12px auto;
+       }
+     }
+      }
+    }
   }
 `
 
-export const EndTitle = styled.div`
+export const EndTitles = styled.div`
   width: 100%;
   margin: -40px 0 0 0;
   text-align: center;
@@ -93,11 +113,60 @@ export const EndTitle = styled.div`
   color: white;
   display: flow-root;
   background: black;
- 
-   #name{
-     background: rgba(255, 255, 255, 0,18);
 
-   }
- 
- 
+  input {
+    width: 31%;
+    outline: none;
+    padding: 12px 0;
+    border: none;
+  }
+
+  textarea {
+    border: none;
+  }
+
+  .name {
+    background-color: #2E2E2E;
+  }
+
+  input::placeholder {
+    color: white;
+    padding: 0px 12px;
+  }
+
+  textarea::placeholder {
+    color: white;
+    padding: 10px 12px;
+  }
+
+  .email {
+    background-color: #333333;
+  }
+
+  button {
+    border: 1px solid white;
+    margin: 22px auto;
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+    padding: 13px 50px;
+  }
+
+  .logo {
+    margin: 20px auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    textarea{
+      width: 70%;
+      margin:  auto;
+    }
+    input{
+      width: 70%;
+    }
+  }
 `

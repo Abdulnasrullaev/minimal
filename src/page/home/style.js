@@ -95,6 +95,14 @@ export const HomePage = styled.div`
     }
   }
 
+  @media screen and (max-width: 768px) {
+    background-size: auto;
+ padding-bottom: 70px;
+    .minimal{
+      margin: 50px 0;
+    }
+  }
+
   @media screen and (max-width: 480px) {
     .brand {
       font-size: 31px;
@@ -163,7 +171,34 @@ export const Brands = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    .cards-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      .cards{
+        padding: 10px;
+        width: 47.5%;
+        margin: 20px 10px;
+      img{
+        width: fit-content;
+      }
+      }
+    }
   }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    .cards-wrapper{
+      display: flow-root;
+      width: 100%;
+      .cards{
+        padding: 10px;
+        width: fit-content;
+        margin: 20px auto;
+      }
+    }
+  }
+  
 `
 
 export const Images = styled.div`
@@ -209,7 +244,8 @@ export const Images = styled.div`
       }
     }
   }
-@media screen and (max-width: 768px) {
-  width: 100%;
-}
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `
